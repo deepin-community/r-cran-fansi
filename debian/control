@@ -1,0 +1,26 @@
+Source: r-cran-fansi
+Maintainer: Debian R Packages Maintainers <r-pkg-team@alioth-lists.debian.net>
+Uploaders: Andreas Tille <tille@debian.org>
+Section: gnu-r
+Testsuite: autopkgtest-pkg-r
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-r,
+               r-base-dev
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/r-pkg-team/r-cran-fansi
+Vcs-Git: https://salsa.debian.org/r-pkg-team/r-cran-fansi.git
+Homepage: https://cran.r-project.org/package=fansi
+Rules-Requires-Root: no
+
+Package: r-cran-fansi
+Architecture: any
+Depends: ${R:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends}
+Recommends: ${R:Recommends}
+Suggests: ${R:Suggests}
+Description: GNU R ANSI control sequence aware string functions
+ This GNU R package Counterparts to R string manipulation functions
+ that account for the effects of ANSI text formatting control
+ sequences.
